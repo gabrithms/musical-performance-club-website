@@ -115,7 +115,7 @@ section {
 }
 
 .frontpage-images img {
-  width: 100px;
+  width: 250px;
   height: auto;
   object-fit: cover;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* horizontal, vertical, blur, color */
@@ -342,4 +342,5 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 
