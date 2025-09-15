@@ -1,0 +1,344 @@
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* left and right sides */
+  align-items: center;
+  background-color: #000000;
+  padding: 1rem 2rem; /* vertical + horizontal padding */
+}
+
+/* Left side container (title + nav) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* space between title and nav */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  display: flex;
+  gap: 0.3rem; /* spacing between color spans */
+}
+
+header nav {
+  display: flex;
+  gap: 1rem; /* spacing between links */
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-icons img {
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  border-radius: 10%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.header-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7);
+}
+
+/* colours */
+.color1 { color: #5976b5; }
+.color2 { color: #d167db; }
+.color3 { color: #e7d157; }
+.color4 { color: #8dde96; }
+.color5 { color: #f47c7c; }
+.color6 { color: #74f0e7; }
+.color7 { color: #a95cd9; }
+
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* index class */
+
+.welcome {
+  display: flex;
+  align-items: left;
+  background-color: #b0b0b0;
+  padding: 2rem;
+}
+
+.welcome-text {
+  flex: 1;
+  color: #1e293b;
+  text-align: left;
+  max-width: 900px
+}
+
+.welcome-text p {
+  font-size: 20px;   
+  line-height: 2;
+  max-width: 900px;
+  text-align: left;
+}
+
+.frontpage-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.frontpage-images img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* horizontal, vertical, blur, color */
+  border-radius: 20%;          /* optional: makes corners slightly rounded */
+  transition: transform 0.2s, box-shadow 0.2s; /* hover effect */
+}
+
+.frontpage-images img:hover {
+  transform: scale(1.02);       /* slightly enlarge on hover */
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7); /* stronger shadow on hover */
+}
+
+.join {
+  background-color: #000000;
+}
+.join h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.activities {
+  background-color: #6c6c6c;
+}
+.activities ul {
+  display: flex;    
+  min-height: 200px;           
+  justify-content: space-around; 
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;               
+}
+
+.activities li {
+  max-width: 200px;              
+  font-size: 20px;               
+  line-height: 1.5;
+  text-align: center;           
+}
+
+/* upcoming events */
+
+.coming-soon {
+  text-align: center;
+}
+
+/* lesson plan */
+
+.lessons { 
+  text-align: left;
+  min-height: 300px;
+  background-color: gray;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.lessons-text h2 {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.lessons-text p {
+  font-size: 20px;
+  color: rgb(57, 59, 59);
+  font-weight: bold;
+  text-shadow: none;
+
+}
+
+.form-text {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.form {
+  text-align: left;
+  min-height: 300px;
+  padding: 2rem;
+}
+.google-form {
+  width: 100%;              
+  max-width: 700px;         
+  height: 600px;            
+  overflow: auto;            
+  border-radius: 10px;       
+  background-color: rgb(59,59,59);    
+  margin-top: 1rem;         
+}
+
+.google-form-container iframe {
+  width: 100%;             
+  height: 1200px;           
+  border: none;              
+}
+
+.socials {
+  text-align: left;
+  min-height: 300px;
+  background-color: white;
+  padding: 2rem;
+  color: black;
+}
+
+.socials-text h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.088);
+}
+
+.socials-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.socials-icons img {
+  width: 55px;                
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+  border-radius: 20%;          
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.socials-icons img:hover {
+  transform: scale(1.1);       
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7); 
+}
+
+/* past events */
+
+.past-events {
+  background-color: white;
+}
+
+.past-events-text {
+  color: black;
+}
+
+.BOTB {
+  background-color: #242424;
+}
+
+.BOTB-images{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem
+}
+.BOTB-images img{
+  width: 450px;                
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+  border-radius: 10%;         
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.BOTB-images img:hover {
+  transform: scale(1.02);       
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7); 
+}
+
+.solo-image img{
+  width: 280px;
+  height: auto;
+}
+
+.endofyear {
+  height: auto;
+  min-height: 600px;
+}
+
+.endofyear-image img {
+   width: 450px;                
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+  border-radius: 10%;         
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.endofyear-image img:hover {
+  transform: scale(1.02);       
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7); 
+}
+
+/* about the executives */
+
+.execs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.execs > div {
+  width: 45%;
+}
+
+.execs p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.gabjenimages {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem
+}
+.gabjenimages img{
+  width: 450px;                
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.5); 
+  border-radius: 10%;         
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.gabjenimages img:hover {
+  transform: scale(1.02);       
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7); 
+}
+
+.positions {
+  background-color: white;
+  color: black;
+  min-height: 130px;
+}
+
+footer {
+  background-color: #242424;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
